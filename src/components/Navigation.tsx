@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -14,7 +14,6 @@ import AuthModal from "./PhoneNumberModal";
 export const Navigation = () => {
   const { isLoggedIn } = useOkto() as OktoContextType;
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-  const [currentPath] = useState(window.location.pathname);
 
   const renderWalletButton = () => {
     if (!isLoggedIn) {

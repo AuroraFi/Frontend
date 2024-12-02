@@ -3,6 +3,7 @@ import { BuildType, OktoProvider } from "okto-sdk-react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import LandingPage from "./pages/Home";
+import Footer from "./components/Footer";
 
 const OKTO_CLIENT_API_KEY = import.meta.env.VITE_OKTO_API_KEY;
 
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
       </div>
     </OktoProvider>
